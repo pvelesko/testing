@@ -1,0 +1,42 @@
+           <...>-16727 [004] .... 220266.132465: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132466: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132466: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132467: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132467: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132467: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132467: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132468: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-16727 [004] .... 220266.132469: tracing_mark_write: vtune_time_sync: tsc=772335095480850,772335095487484,772335095488862,772335095489826,772335095490834,772335095491792,772335095492760,772335095493756
+           <...>-16727 [004] .... 220266.132482: tracing_mark_write: igfx_pciid_mark: id=6458
+           <...>-16727 [004] .... 220266.132490: tracing_mark_write: igfx_engines_mark: ftrace_id=1, vtune_id=2
+           <...>-16727 [004] .... 220266.132493: tracing_mark_write: igfx_engines_mark: ftrace_id=2, vtune_id=1
+           <...>-16727 [004] .... 220266.132495: tracing_mark_write: igfx_engines_mark: ftrace_id=3, vtune_id=4
+           <...>-16727 [004] .... 220266.132498: tracing_mark_write: igfx_engines_mark: ftrace_id=4, vtune_id=6
+           <...>-16727 [004] .... 220266.132500: tracing_mark_write: igfx_engines_mark: ftrace_id=5, vtune_id=7
+           <...>-16727 [004] .... 220266.132502: tracing_mark_write: igfx_engines_mark: ftrace_id=6, vtune_id=3
+           <...>-16727 [004] .... 220266.132505: tracing_mark_write: igfx_engines_mark: ftrace_id=7, vtune_id=8
+           <...>-16727 [004] .... 220266.132606: tracing_mark_write: i915_dev_id_mark: id=0
+           <...>-16727 [004] .... 220266.132610: tracing_mark_write: domid_vgpuid_mark: dom_id=0 vgpu_id=0
+    amplxe-runss-16741 [005] .... 220266.136075: i915_request_add: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=335, global=0
+    amplxe-runss-16741 [005] d... 220266.136078: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=335, prio=4294966272, global=322400, port=0
+          <idle>-0     [007] d.s. 220266.136170: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=335, global=322400, completed?=1
+   kworker/u16:7-16212 [004] .... 220266.846058: i915_request_retire: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=335, global=322400
+           <...>-16735 [002] .... 220268.436075: i915_request_queue: dev=0, engine=0:0, hw_id=2, ctx=432, seqno=1, flags=0x0
+           <...>-16735 [002] .... 220268.436080: i915_request_add: dev=0, engine=0:0, hw_id=2, ctx=432, seqno=1, global=0
+           <...>-16735 [002] d... 220268.436101: i915_request_in: dev=0, engine=0:0, hw_id=2, ctx=432, seqno=1, prio=0, global=322401, port=0
+          <idle>-0     [007] d.s. 220268.436251: i915_request_out: dev=0, engine=0:0, hw_id=2, ctx=432, seqno=1, global=322401, completed?=1
+    amplxe-runss-16741 [005] .... 220268.461875: i915_request_retire: dev=0, engine=0:0, hw_id=2, ctx=432, seqno=1, global=322401
+    amplxe-runss-16741 [005] .... 220268.461883: i915_request_add: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=336, global=0
+    amplxe-runss-16741 [005] d... 220268.461885: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=336, prio=4294966272, global=322402, port=0
+          <idle>-0     [007] d.s. 220268.461950: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=6, seqno=336, global=322402, completed?=1
+    amplxe-runss-16727 [004] .... 220268.637752: tracing_mark_write: vtune_tid2pid: pid=16735 tids=16735
+    amplxe-runss-16727 [004] .... 220268.637758: tracing_mark_write: vtune_proc_info: pid=16735 cmdline=/soft/restricted/CNDA/sdk/2019.6.30.011/vtune/2020.0/bin64/amplxe-runss
+    amplxe-runss-16727 [004] .... 220268.637762: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637763: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637763: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637763: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637764: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637764: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637764: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637765: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-16727 [004] .... 220268.637769: tracing_mark_write: vtune_time_sync: tsc=772343874046266,772343874047806,772343874048960,772343874049986,772343874050962,772343874051984,772343874052932,772343874053896

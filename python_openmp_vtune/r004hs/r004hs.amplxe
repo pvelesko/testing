@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1542239478</timestamp>
+  <hostname type="string">skylake11.ftm.alcf.anl.gov</hostname>
+  <os type="string">linux</os>
+  <product type="string">Intel® VTune™ Amplifier 2018 Update 1</product>
+  <buildNumber type="s32_t">535340</buildNumber>
+  <logicalCPUCount type="s32_t">112</logicalCPUCount>
+  <CPUFrequency type="s64_t">2500000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">85</CPUModel>
+  <CPUStepping type="s32_t">4</CPUStepping>
+  <CPUBrandName type="string">Intel(R) Xeon(R) Platinum 8180M CPU @ 2.50GHz</CPUBrandName>
+  <isa type="string">avx2</isa>
+  <collectionTimeBegin type="u64_t">1542239478</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1542239614</collectionTimeEnd>
+  <variables>
+   <at type="string">hs</at>
+  </variables>
+ </rdmgr>
+</root>

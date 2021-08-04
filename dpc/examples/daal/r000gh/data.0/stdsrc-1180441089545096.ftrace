@@ -1,0 +1,228 @@
+           <...>-32393 [002] .... 1180442.594942: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594943: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594944: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594944: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594945: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594945: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594946: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594946: tracing_mark_write: vtune_time_sync: tsc=lookahead
+           <...>-32393 [002] .... 1180442.594948: tracing_mark_write: vtune_time_sync: tsc=4136903352712684,4136903352721126,4136903352722948,4136903352724400,4136903352725842,4136903352727272,4136903352728884,4136903352730312
+           <...>-32393 [002] .... 1180442.594961: tracing_mark_write: igfx_pciid_mark: id=6458
+           <...>-32393 [002] .... 1180442.594969: tracing_mark_write: igfx_engines_mark: ftrace_id=1, vtune_id=2
+           <...>-32393 [002] .... 1180442.594972: tracing_mark_write: igfx_engines_mark: ftrace_id=2, vtune_id=1
+           <...>-32393 [002] .... 1180442.594975: tracing_mark_write: igfx_engines_mark: ftrace_id=3, vtune_id=4
+           <...>-32393 [002] .... 1180442.594978: tracing_mark_write: igfx_engines_mark: ftrace_id=4, vtune_id=6
+           <...>-32393 [002] .... 1180442.594981: tracing_mark_write: igfx_engines_mark: ftrace_id=5, vtune_id=7
+           <...>-32393 [002] .... 1180442.594983: tracing_mark_write: igfx_engines_mark: ftrace_id=6, vtune_id=3
+           <...>-32393 [002] .... 1180442.594986: tracing_mark_write: igfx_engines_mark: ftrace_id=7, vtune_id=8
+           <...>-32393 [002] .... 1180442.595095: tracing_mark_write: i915_dev_id_mark: id=0
+           <...>-32393 [002] .... 1180442.595099: tracing_mark_write: domid_vgpuid_mark: dom_id=0 vgpu_id=0
+    amplxe-runss-32403 [001] .... 1180442.597876: i915_request_add: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3128
+    amplxe-runss-32403 [001] d... 1180442.597881: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3128, prio=4294963203, port=0
+          <idle>-0     [002] ..s. 1180442.597948: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3128, completed?=1
+   kworker/u16:3-32319 [005] .... 1180443.788752: i915_request_retire: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3128
+   kworker/u16:3-32319 [005] d... 1180443.788765: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3130, prio=2147483647, port=0
+          <idle>-0     [002] ..s. 1180443.788924: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3130, completed?=1
+   kworker/u16:2-32184 [006] .... 1180445.836649: i915_request_retire: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3130
+          python-32397 [007] .... 1180452.028954: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=2, flags=0x0
+          python-32397 [007] .... 1180452.028959: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=2
+          python-32397 [007] d... 1180452.028961: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=2, prio=3, port=0
+          python-32446 [002] ..s. 1180452.029091: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=2, completed?=1
+          python-32397 [007] .... 1180452.029240: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=2
+          python-32397 [007] .... 1180452.029245: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=4, flags=0x0
+          python-32397 [007] .... 1180452.029248: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=4
+          python-32397 [007] d... 1180452.029249: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=4, prio=3, port=0
+          python-32446 [002] ..s. 1180452.029281: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=4, completed?=1
+          python-32397 [007] .... 1180452.029377: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=4
+          python-32397 [007] .... 1180452.029381: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=6, flags=0x0
+          python-32397 [007] .... 1180452.029384: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=6
+          python-32397 [007] d... 1180452.029385: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=6, prio=3, port=0
+          python-32446 [002] ..s. 1180452.029416: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=6, completed?=1
+          python-32397 [007] .... 1180452.029589: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=6
+          python-32397 [007] .... 1180452.029593: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=8, flags=0x0
+          python-32397 [007] .... 1180452.029595: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=8
+          python-32397 [007] d... 1180452.029596: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=8, prio=3, port=0
+          python-32446 [002] ..s. 1180452.029628: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=8, completed?=1
+          python-32397 [007] .... 1180452.029725: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=8
+          python-32397 [007] .... 1180452.029728: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=10, flags=0x0
+          python-32397 [007] .... 1180452.029730: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=10
+          python-32397 [007] d... 1180452.029731: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=10, prio=3, port=0
+          python-32446 [002] ..s. 1180452.029783: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=10, completed?=1
+          python-32397 [007] .... 1180452.029903: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=10
+          python-32397 [007] .... 1180452.029907: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=12, flags=0x0
+          python-32397 [007] .... 1180452.029909: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=12
+          python-32397 [007] d... 1180452.029909: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=12, prio=3, port=0
+          python-32446 [002] ..s. 1180452.030009: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=12, completed?=1
+          python-32397 [007] .... 1180452.277154: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=14, flags=0x0
+          python-32397 [007] .... 1180452.277156: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=14
+          python-32397 [007] d... 1180452.277175: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=14, prio=3, port=0
+          python-32397 [007] .... 1180452.277176: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=12
+          <idle>-0     [002] ..s. 1180452.277238: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=14, completed?=1
+          python-32397 [007] .... 1180452.277378: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=16, flags=0x0
+          python-32397 [007] .... 1180452.277380: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=16
+          python-32397 [007] d... 1180452.277381: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=16, prio=3, port=0
+          python-32397 [007] .... 1180452.277382: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=14
+          python-32446 [002] ..s. 1180452.277433: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=16, completed?=1
+          python-32397 [007] .... 1180452.516578: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=18, flags=0x0
+          python-32397 [007] .... 1180452.516581: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=18
+          python-32397 [007] d... 1180452.516583: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=18, prio=3, port=0
+          python-32397 [007] .... 1180452.516585: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=16
+          <idle>-0     [002] ..s. 1180452.516648: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=18, completed?=1
+          python-32397 [007] .... 1180452.516772: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=20, flags=0x0
+          python-32397 [007] .... 1180452.516774: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=20
+          python-32397 [007] d... 1180452.516775: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=20, prio=3, port=0
+          python-32397 [007] .... 1180452.516776: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=18
+          <idle>-0     [002] ..s. 1180452.517271: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=20, completed?=1
+          python-32397 [007] .... 1180452.755516: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=22, flags=0x0
+          python-32397 [007] .... 1180452.755518: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=22
+          python-32397 [007] d... 1180452.755520: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=22, prio=3, port=0
+          python-32397 [007] .... 1180452.755522: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=20
+          <idle>-0     [002] ..s. 1180452.755577: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=22, completed?=1
+          python-32397 [007] .... 1180452.755666: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=24, flags=0x0
+          python-32397 [007] .... 1180452.755669: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=24
+          python-32397 [007] d... 1180452.755670: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=24, prio=3, port=0
+          python-32397 [007] .... 1180452.755671: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=22
+          <idle>-0     [002] ..s. 1180452.756200: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=24, completed?=1
+          python-32397 [007] .... 1180452.993288: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=26, flags=0x0
+          python-32397 [007] .... 1180452.993293: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=26
+          python-32397 [007] d... 1180452.993295: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=26, prio=3, port=0
+          python-32397 [007] .... 1180452.993296: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=24
+          python-32446 [002] ..s. 1180452.994019: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=26, completed?=1
+          python-32397 [007] .... 1180452.994171: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=28, flags=0x0
+          python-32397 [007] .... 1180452.994173: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=28
+          python-32397 [007] d... 1180452.994174: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=28, prio=3, port=0
+          python-32397 [007] .... 1180452.994175: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=26
+          <idle>-0     [002] ..s. 1180452.994837: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=28, completed?=1
+          python-32397 [007] .... 1180452.995418: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=30, flags=0x0
+          python-32397 [007] .... 1180452.995420: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=30
+          python-32397 [007] d... 1180452.995421: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=30, prio=3, port=0
+          python-32397 [007] .... 1180452.995422: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=28
+          python-32446 [002] ..s. 1180452.995515: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=30, completed?=1
+          python-32397 [007] .... 1180452.995607: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=32, flags=0x0
+          python-32397 [007] .... 1180452.995608: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=32
+          python-32397 [007] d... 1180452.995609: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=32, prio=3, port=0
+          python-32397 [007] .... 1180452.995610: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=30
+          <idle>-0     [002] ..s. 1180452.995670: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=32, completed?=1
+          python-32397 [007] .... 1180452.995728: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=34, flags=0x0
+          python-32397 [007] .... 1180452.995731: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=34
+          python-32397 [007] d... 1180452.995731: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=34, prio=3, port=0
+          python-32397 [007] .... 1180452.995733: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=32
+          <idle>-0     [002] .Ns. 1180452.995772: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=34, completed?=1
+          python-32397 [007] .... 1180453.233228: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=36, flags=0x0
+          python-32397 [007] .... 1180453.233232: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=36
+          python-32397 [007] d... 1180453.233234: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=36, prio=3, port=0
+          python-32397 [007] .... 1180453.233236: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=34
+          python-32446 [002] ..s. 1180453.233305: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=36, completed?=1
+          python-32397 [007] .... 1180453.233768: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=38, flags=0x0
+          python-32397 [007] .... 1180453.233770: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=38
+          python-32397 [007] d... 1180453.233771: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=38, prio=3, port=0
+          python-32397 [007] .... 1180453.233772: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=36
+          python-32446 [002] ..s. 1180453.233880: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=38, completed?=1
+          python-32397 [007] .... 1180453.233989: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=40, flags=0x0
+          python-32397 [007] .... 1180453.233990: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=40
+          python-32397 [007] d... 1180453.233991: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=40, prio=3, port=0
+          python-32397 [007] .... 1180453.233992: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=38
+          <idle>-0     [002] .Ns. 1180453.234063: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=40, completed?=1
+          python-32397 [007] .... 1180453.488979: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=42, flags=0x0
+          python-32397 [007] .... 1180453.488982: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=42
+          python-32397 [007] d... 1180453.488984: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=42, prio=3, port=0
+          python-32397 [007] .... 1180453.488986: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=40
+          <idle>-0     [002] ..s. 1180453.489132: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=42, completed?=1
+          python-32397 [007] .... 1180453.489213: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=44, flags=0x0
+          python-32397 [007] .... 1180453.489215: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=44
+          python-32397 [007] d... 1180453.489216: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=44, prio=3, port=0
+          python-32397 [007] .... 1180453.489218: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=42
+          <idle>-0     [002] ..s. 1180453.489449: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=44, completed?=1
+   kworker/u16:2-32184 [005] .... 1180453.773459: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=44
+   kworker/u16:2-32184 [005] d... 1180453.773472: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3132, prio=2147483647, port=0
+          <idle>-0     [002] ..s. 1180453.773545: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3132, completed?=1
+          python-32397 [007] .... 1180454.682408: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=46, flags=0x0
+          python-32397 [007] .... 1180454.682413: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=46
+          python-32397 [007] d... 1180454.682415: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=46, prio=3, port=0
+          python-32446 [002] ..s. 1180454.682550: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=46, completed?=1
+          python-32397 [007] .... 1180454.682722: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=48, flags=0x0
+          python-32397 [007] .... 1180454.682723: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=48
+          python-32397 [007] d... 1180454.682724: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=48, prio=3, port=0
+          python-32397 [007] .... 1180454.682726: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=46
+          <idle>-0     [002] ..s. 1180454.682935: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=48, completed?=1
+          python-32397 [007] .... 1180455.159221: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=48
+          python-32397 [007] .... 1180455.159226: i915_request_retire: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3132
+          python-32397 [007] .... 1180455.159230: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=50, flags=0x0
+          python-32397 [007] .... 1180455.159234: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=50
+          python-32397 [007] d... 1180455.159235: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=50, prio=3, port=0
+          <idle>-0     [002] ..s. 1180455.159480: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=50, completed?=1
+          python-32397 [007] .... 1180455.159528: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=52, flags=0x0
+          python-32397 [007] .... 1180455.159531: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=52
+          python-32397 [007] d... 1180455.159532: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=52, prio=3, port=0
+          python-32397 [007] .... 1180455.159533: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=50
+          <idle>-0     [002] ..s. 1180455.159690: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=52, completed?=1
+          python-32397 [007] .... 1180455.397345: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=54, flags=0x0
+          python-32397 [007] .... 1180455.397349: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=54
+          python-32397 [007] d... 1180455.397352: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=54, prio=3, port=0
+          python-32397 [007] .... 1180455.397353: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=52
+          <idle>-0     [002] .Ns. 1180455.397456: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=54, completed?=1
+          python-32397 [007] .... 1180455.635485: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=56, flags=0x0
+          python-32397 [007] .... 1180455.635488: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=56
+          python-32397 [007] d... 1180455.635490: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=56, prio=3, port=0
+          python-32397 [007] .... 1180455.635492: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=54
+          python-32397 [007] .... 1180455.635556: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=58, flags=0x0
+          python-32397 [007] .... 1180455.635557: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=58
+          <idle>-0     [002] ..s. 1180455.635557: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=56, completed?=1
+          python-32397 [007] d... 1180455.635558: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=58, prio=3, port=0
+          python-32397 [007] .... 1180455.635559: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=56
+          <idle>-0     [002] ..s. 1180455.635601: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=58, completed?=1
+          python-32397 [007] .... 1180455.635676: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=60, flags=0x0
+          python-32397 [007] .... 1180455.635695: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=60
+          python-32397 [007] d... 1180455.635695: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=60, prio=3, port=0
+          python-32397 [007] .... 1180455.635696: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=58
+          python-32446 [002] ..s. 1180455.635782: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=60, completed?=1
+          python-32397 [007] .... 1180455.635811: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=62, flags=0x0
+          python-32397 [007] .... 1180455.635811: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=62
+          python-32397 [007] d... 1180455.635812: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=62, prio=3, port=0
+          python-32397 [007] .... 1180455.635813: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=60
+          python-32397 [007] .... 1180455.635840: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=64, flags=0x0
+          python-32397 [007] .... 1180455.635843: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=64
+          python-32397 [007] .... 1180455.635844: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=62
+          <idle>-0     [002] .Ns. 1180455.635860: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=62, completed?=1
+          <idle>-0     [002] dNs. 1180455.635861: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=64, prio=3, port=0
+          <idle>-0     [002] .ns. 1180455.635937: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=64, completed?=1
+   kworker/u16:2-32184 [005] .... 1180455.820407: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=64
+   kworker/u16:2-32184 [005] d... 1180455.820433: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3134, prio=2147483647, port=0
+          <idle>-0     [002] ..s. 1180455.820482: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3134, completed?=1
+          python-32397 [007] .... 1180455.871749: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=66, flags=0x0
+          python-32397 [007] .... 1180455.871752: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=66
+          python-32397 [007] d... 1180455.871754: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=66, prio=3, port=0
+          <idle>-0     [002] ..s. 1180455.871812: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=66, completed?=1
+          python-32397 [007] .... 1180455.871937: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=68, flags=0x0
+          python-32397 [007] .... 1180455.871940: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=68
+          python-32397 [007] d... 1180455.871941: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=68, prio=3, port=0
+          python-32397 [007] .... 1180455.871943: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=66
+          <idle>-0     [002] .Ns. 1180455.872005: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=68, completed?=1
+          python-32397 [007] .... 1180455.872064: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=70, flags=0x0
+          python-32397 [007] .... 1180455.872065: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=70
+          python-32397 [007] d... 1180455.872065: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=70, prio=3, port=0
+          python-32397 [007] .... 1180455.872066: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=68
+          python-32397 [007] .... 1180455.872092: i915_request_queue: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=72, flags=0x0
+          python-32397 [007] .... 1180455.872117: i915_request_add: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=72
+          python-32397 [007] .... 1180455.872118: i915_request_retire: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=70
+          <idle>-0     [002] ..s. 1180455.872119: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=70, completed?=1
+          <idle>-0     [002] d.s. 1180455.872120: i915_request_in: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=72, prio=3, port=0
+          <idle>-0     [002] ..s. 1180455.872156: i915_request_out: dev=0, engine=0:0, hw_id=1, ctx=1320, seqno=72, completed?=1
+    amplxe-runss-32403 [006] .... 1180455.978207: i915_request_add: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3136
+    amplxe-runss-32403 [006] d... 1180455.978210: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3136, prio=4294963203, port=0
+    amplxe-runss-32403 [006] .... 1180455.978211: i915_request_retire: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3134
+    amplxe-runss-32403 [006] .... 1180455.978212: i915_request_add: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3138
+          <idle>-0     [002] d.s. 1180455.978227: i915_request_in: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3138, prio=4294963202, port=0
+          <idle>-0     [002] ..s. 1180455.978262: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3136, completed?=1
+          <idle>-0     [002] ..s. 1180455.978277: i915_request_out: dev=0, engine=0:0, hw_id=0, ctx=4, seqno=3138, completed?=1
+    amplxe-runss-32393 [003] .... 1180456.109456: tracing_mark_write: vtune_tid2pid: pid=32397 tids=32397
+    amplxe-runss-32393 [003] .... 1180456.109462: tracing_mark_write: vtune_proc_info: pid=32397 cmdline=/soft/restricted/intel_dga/sdk/2019.12.15.018/vtune/2020.1/bin64/amplxe-runss
+    amplxe-runss-32393 [003] .... 1180456.109467: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109467: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109468: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109468: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109469: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109469: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109469: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109470: tracing_mark_write: vtune_time_sync: tsc=lookahead
+    amplxe-runss-32393 [003] .... 1180456.109471: tracing_mark_write: vtune_time_sync: tsc=4136950708935498,4136950708937838,4136950708939352,4136950708940796,4136950708942240,4136950708943684,4136950708945172,4136950708946604

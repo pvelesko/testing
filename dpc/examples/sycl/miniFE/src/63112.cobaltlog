@@ -1,0 +1,26 @@
+Jobid: 63112
+qsub -n 1 -t 45 -q iris -I
+Thu Nov 07 21:09:03 2019 +0000 (UTC) submitted with cwd set to: /home/pvelesko/testing/dpc/examples/sycl/miniFE/src
+jobid 63112 submitted from terminal /dev/pts/61
+Thu Nov 07 21:09:19 2019 +0000 (UTC) 
+Thu Nov 07 21:09:19 2019 +0000 (UTC) Command: '/usr/bin/ssh' 'iris18' '/usr/libexec/cobalt/cobalt-launcher.py' '--nf' '/var/tmp/cobalt.63112' '--jobid' '63112' '--cwd' '/home/pvelesko/testing/dpc/examples/sycl/miniFE/src' '--env' 'COBALT_JOBID=63112' '/bin/sleep' '2700'
+Thu Nov 07 21:09:19 2019 +0000 (UTC) 
+Thu Nov 07 21:09:19 2019 +0000 (UTC) Environment:
+Thu Nov 07 21:09:19 2019 +0000 (UTC) SHELL=/bin/bash
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_NODEFILE=/tmp/tmp6yDiRg
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_PARTNAME=iris18
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_JOBID=63112
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_STARTTIME=1573160945
+Thu Nov 07 21:09:19 2019 +0000 (UTC) LOGNAME=pvelesko
+Thu Nov 07 21:09:19 2019 +0000 (UTC) USER=pvelesko
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_ENDTIME=1573163645
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_PARTSIZE=1
+Thu Nov 07 21:09:19 2019 +0000 (UTC) HOME=/home/pvelesko
+Thu Nov 07 21:09:19 2019 +0000 (UTC) COBALT_JOBSIZE=1
+Thu Nov 07 21:09:19 2019 +0000 (UTC) 
+Thu Nov 07 21:09:19 2019 +0000 (UTC) Info: stdin received from /dev/null
+Thu Nov 07 21:09:19 2019 +0000 (UTC) Info: stdout sent to /home/pvelesko/testing/dpc/examples/sycl/miniFE/src/63112.output
+Thu Nov 07 21:09:19 2019 +0000 (UTC) Info: stderr sent to /home/pvelesko/testing/dpc/examples/sycl/miniFE/src/63112.error
+Thu Nov 07 21:09:19 2019 +0000 (UTC) 
+Thu Nov 07 21:54:14 2019 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination
+Thu Nov 07 21:54:30 2019 +0000 (UTC) Info: job is in the process of exiting; user delete request ignored

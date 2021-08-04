@@ -1,0 +1,894 @@
+/* CSS Document */
+
+@-webkit-keyframes idvcgrid_pulse{
+    0%{
+        text-shadow: 0 0 0 currentColor;
+    }
+
+    50%{
+        text-shadow: 0 0 0.8em currentColor;
+    }
+
+    100%{
+        text-shadow: 0 0 0 currentColor;
+    }
+}
+
+@-moz-keyframes idvcgrid_pulse{
+    0%{
+        text-shadow: 0 0 0 currentColor;
+    }
+
+    50%{
+        text-shadow: 0 0 0.8em currentColor;
+    }
+
+    100%{
+        text-shadow: 0 0 0 currentColor;
+    }
+}
+
+@keyframes idvcgrid_pulse{
+    0%{
+        text-shadow: 0 0 0 currentColor;
+    }
+
+    50%{
+        text-shadow: 0 0 0.8em currentColor;
+    }
+
+    100%{
+        text-shadow: 0 0 0 currentColor;
+    }
+}
+
+@-webkit-keyframes idvcgrid_wait{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes idvcgrid_wait{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes idvcgrid_wait{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.idvcgrid_body {
+    /*font : caption;
+    font-size: calc(100% - 1px);*/
+    border-spacing: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    overflow-x : auto;
+    background-color: Window;
+    color: WindowText;
+    -moz-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+.idvcgrid_column {
+    top: 0;
+    width: 400px;
+    min-width: 20px;
+    position: absolute;
+    cursor: default;
+    bottom: 0;
+}
+
+.idvcgrid_header_section {
+    position: relative;
+    background-color: ThreeDFace;
+    color: ButtonText;
+    padding: 0.3em 0.3em;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    line-height: 1em;
+    height: 1em;
+    border-color: ThreeDShadow;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*transition: background-color 0.2s ease-in-out;*/
+}
+
+.idvcgrid_hidden_header .idvcgrid_header_section {
+    display: none;
+}
+
+.idvcgrid_header_section:hover {
+    background-color: ThreeDHighlight;
+}
+
+.idvcgrid_header_section.idvc_grid_notsortable:hover {
+    background-color: ThreeDFace;
+}
+
+.idvcgrid_ownerdraw .idvcgrid_header_section {
+    text-overflow: clip !important;
+}
+
+.idvcgrid_header_section_active {
+    padding: 0.36em 0.24em 0.24em 0.36em;
+    background: -webkit-linear-gradient(top, ThreeDFace 0%, ThreeDHighlight 100%) !important;
+    background: -moz-linear-gradient(to bottom, ThreeDFace 0%, ThreeDHighlight 100%) !important;
+    background: linear-gradient(to bottom, ThreeDFace 0%, ThreeDHighlight 100%) !important;
+}
+
+.idvcgrid_header_section_hover {
+    background-color: ThreeDHighlight;
+}
+
+.idvcgrid_header_section_moving {
+    position: absolute;
+    background-color: ThreeDShadow !important;
+    border-color: currentColor;
+    box-sizing: border-box;
+    opacity: 0.6;
+}
+
+.idvcgrid_header_section_moving_container {
+    position: absolute;
+    background-color: transparent;
+    z-index: 5000;
+    overflow: hidden;
+}
+
+.idvcgrid_header_section_text {
+    text-align: center;
+    pointer-events: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.1em 0;
+    max-height: 100%;
+}
+
+.idvcgrid_header_expand_collapse {
+    padding-right: 1.11em;
+}
+
+.idvcgrid_header_section_active.idvcgrid_header_expand_collapse {
+    padding-right: 1.05em;
+}
+
+.idvcgrid_expand_collapse_column {
+    position: absolute;
+    top: 0.3em;
+    right: 0.3em;
+    width: 0.8em;
+    height: 0.8em;
+    line-height: 0.8em;
+    border-style: none;
+    border-radius: 0.3em;
+    color: GrayText;
+    box-sizing: content-box;
+}
+
+.idvcgrid_expand_collapse_column:active {
+    background-color: ThreeDLightShadow;
+}
+
+.idvcgrid_header_section_active .idvcgrid_expand_collapse_column {
+    top: 0.36em;
+    right: 0.22em;
+}
+
+.idvcgrid_expand_collapse_column:hover {
+    color: WindowText;
+}
+
+.idvcgrid_expanded_column:after,
+.idvcgrid_collapsed_column:after {
+    position: absolute;
+    top: -0.1em;
+    right: 0.125em;
+}
+
+.idvcgrid_expanded_column:after {
+    content: '\00AB';/*'\25c1';*/
+}
+
+.idvcgrid_collapsed_column:after {
+    content: '\00BB';/*'\25b7';*/
+}
+
+.idvcgrid_column_scrolled {
+    overflow: hidden;
+    position: absolute;
+    top: -webkit-calc(1.6em + 1px);
+    top: -moz-calc(1.6em + 1px);
+    top: calc(1.6em + 1px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.idvcgrid_inactive_column {
+    bottom: auto;
+    height: -webkit-calc(1.6em + 1px);
+    height: -moz-calc(1.6em + 1px);
+    height: calc(1.6em + 1px);
+}
+.idvcgrid_inactive_column .idvcgrid_column_scrolled {
+    display: none;
+}
+
+.idvcgrid_hidden_header .idvcgrid_column_scrolled {
+    top: 0 !important;
+}
+
+.idvcgrid_visible_footer .idvcgrid_column_scrolled {
+    bottom: -webkit-calc(1em + 7px) !important;
+    bottom: -moz-calc(1em + 7px) !important;
+    bottom: calc(1em + 7px) !important;
+}
+
+.idvcgrid_header_container {
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.idvcgrid_header_caption {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.idvcgrid_header_legend {
+    position: relative;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.idvcgrid_legend_color {
+    background-color: currentColor;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.idvcgrid_legend_text {
+    pointer-events: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.idvcgrid_column_sorting {
+    color: ThreeDDarkShadow;
+    padding : 0 0 0 0.24em;
+}
+
+.idvcgrid_column_sorting:after {
+    content: '\25BC';
+}
+
+.idvcgrid_column_sorting.idvcgrid_sorting_backward:after {
+    content: '\25B2';
+}
+
+.idvcgrid_column_sorting.idvcgrid_sorting_waiting:after {
+    content: '\25C6';
+    -webkit-animation: idvcgrid_wait 1.5s infinite ease-in-out !important;
+    -moz-animation: idvcgrid_wait 1.5s infinite ease-in-out !important;
+    animation: idvcgrid_wait 1.5s infinite ease-in-out !important;
+    font-size: 1.2em;
+}
+
+.idvcgrid_footer_section {
+    position: absolute;
+    padding: 3px 4px;
+    margin: 0;
+    border: 1px;
+    border-style: solid solid solid none;
+    border-color: ThreeDShadow;
+    background-color: ThreeDFace;
+    color: WindowText;
+    line-height: 1em;
+    height: 1em;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: content-box;
+    display: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.idvcgrid_visible_footer .idvcgrid_footer_section {
+    display: block !important;
+}
+
+.idvcgrid_cell {
+    position: relative;
+    padding: 3px 4px 2px 4px;
+    margin: 0;
+    border: 1px;
+    border-style: solid solid solid none;
+    border-color: ThreeDLightShadow ThreeDLightShadow transparent transparent;
+    background-color: Window;
+    color: WindowText;
+    line-height: 1em;
+    height: 1em;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: content-box;
+}
+
+.idvcgrid_cell:first-child {
+    border-top-color: transparent;
+}
+
+.idvcgrid_cell:last-child {
+    border-bottom-color: ThreeDLightShadow;
+}
+
+.idvcgrid_cell_content_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    pointer-events: none;
+}
+
+.idvcgrid_ownerdraw .idvcgrid_cell {
+    text-overflow: clip !important;
+}
+
+.idvcgrid_selected_row {
+    background-color: ThreeDLightShadow;
+    color: ButtonText;
+}
+
+.idvcgrid_focused .idvcgrid_selected_row {
+    background-color: Highlight;
+    color: HighlightText;
+}
+
+.idvcgrid_focused .idvcgrid_current_row {
+   border-style: dashed solid dashed none;
+   border-top-color: WindowText;
+   border-bottom-color: WindowText;
+}
+
+.idvcgrid_focused .idvcgrid_current_row + .idvcgrid_cell{
+   border-top-color: transparent !important;
+}
+
+.idvcgrid_vertical_scroll {
+    width: 1pc;
+    position : absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    visibility: hidden;
+    pointer-events: auto !important;
+}
+
+.idvcgrid_scroll_size {
+    width: 1px;
+    height: 1px;
+}
+
+.idvcgrid_expand_collapse {
+    margin: 0 0.4em 0 0;
+    padding: 0;
+    left: 1em;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: -10%;
+    border-style: solid;
+    border-width: 0.4em 0 0.4em 0.6em;
+    border-color: transparent transparent transparent currentColor;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    -moz-transition: -moz-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.6;
+}
+
+.idvcgrid_expand_collapse:hover {
+    opacity: 1;
+}
+
+.idvcgrid_expanded {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.idvcgrid_empty {
+    margin-right: 0.44em;
+    border-width: 0.3em !important;
+    border-color: transparent !important;
+}
+
+.idvcgrid_waiting {
+    margin-right: 0.34em;
+    border-width: 0.34em !important;
+    border-color: currentColor !important;
+    border-radius: 0.34em;
+    vertical-align: 3%;
+    -webkit-animation: idvcgrid_wait 1.5s infinite ease-in-out !important;
+    -moz-animation: idvcgrid_wait 1.5s infinite ease-in-out !important;
+    animation: idvcgrid_wait 1.5s infinite ease-in-out !important;
+}
+
+.idvcgrid_more {
+    margin: 0 0.4em 0 0;
+    padding: 0;
+    left: 1em;
+    border-style: solid;
+    border-width: 0.34em;
+    border-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.idvcgrid_more_text {
+    opacity: 0.6;
+}
+
+.idvcgrid_more_text:hover {
+    opacity: 1;
+    -webkit-animation: idvcgrid_pulse 1.5s infinite ease-in-out;
+    -moz-animation: idvcgrid_pulse 1.5s infinite ease-in-out;
+    animation: idvcgrid_pulse 1.5s infinite ease-in-out;
+}
+
+.idvcgrid_search_str {
+    background-color: lightgreen;
+}
+
+.idvcgrid_current_search_str {
+    background-color: lightsalmon;
+}
+
+.idvcgrid_line_num {
+    white-space: pre;
+    color: GrayText;
+    font-size: -webkit-calc(100% - 2px);
+    font-size: -moz-calc(100% - 2px);
+    font-size: calc(100% - 2px);
+    margin: 0 6px 0 2px;
+    display: inline-block;
+    font-family: Consolas !important;
+}
+
+.idvcgrid_source_line {
+    white-space: pre;
+    display: inline-block;
+    font-family: Consolas !important;
+}
+
+.idvcgrid_leftgrid_holder {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20em;
+    border-bottom: 1px solid ThreeDShadow;
+}
+
+.idvcgrid_splitter_holder {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.idvcgrid_splitter {
+    margin: 0;
+    border-width: 1px;
+    border-style: none solid none solid;
+    border-color: ThreeDShadow;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    left: 40%;
+    cursor: ew-resize;
+    box-sizing: content-box;
+}
+
+.idvcgrid_splitter:hover {
+    border-color : ThreeDDarkShadow;
+    background-color: ThreeDShadow;
+}
+
+.idvcgrid_splitter_hover {
+    border-color : ThreeDDarkShadow;
+    background-color: ThreeDShadow !important;
+}
+
+.idvcgrid_central_column {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+}
+
+.idvcgrid_central_column .idvcgrid_header_section {
+    border-width: 0 0 1px 0;
+}
+
+.idvcgrid_central_column .idvcgrid_cell {
+    border-right-style : none;
+}
+
+.idvcgrid_central_column .idvcgrid_footer_section {
+    border-style : solid none solid none;
+}
+
+.idvcgrid_right_grid {
+    margin: 0;
+    position: absolute;
+    left: -webkit-calc(40% + 4px);
+    left: -moz-calc(40% + 4px);
+    left: calc(40% + 4px);
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.idvcgrid_global_cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 5000;
+    cursor: ew-resize;
+}
+
+.idvcgrid_arrow_up {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    z-index: 5000;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+    border-bottom: 0.8em solid red;
+    box-sizing: content-box;
+}
+
+.idvcgrid_hierarchical_line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 0;
+    z-index: 5000;
+    border-left: 1px solid ThreeDShadow;
+    border-bottom: 1px solid ThreeDDarkShadow;
+    border-top: 1px solid ThreeDShadow;
+    box-sizing: content-box;
+}
+
+.idvcgrid_popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    box-shadow: 0 0 0 1px currentColor, 3px 3px 5px 0 #555;
+    pointer-events: none;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.idvcgrid_tooltip {
+    background-color: InfoBackground;
+    color: InfoText;
+    font: caption;
+    border-width: 1px;
+    padding: 2px 4px;
+    margin-top: 2em;
+    box-sizing: content-box;
+    -moz-appearance: none !important;
+}
+
+.idvcgrid_tooltip_ellipsis {
+    margin-top: 0 !important;
+    overflow: hidden;
+}
+
+.idvcgrid_tooltip_ellipsis::after {
+    content: '...';
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+    height: 1em;
+    line-height: 1em;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.idvcgrid_cell_item {
+    background: currentColor;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+    border-radius: 3px;
+    min-height: 1em;
+    box-sizing: content-box;
+    pointer-events: none;
+}
+
+.idvcgrid_cell_text {
+    width: 6ch;
+    text-align: right;
+    flex-shrink: 0;
+    pointer-events: none;
+}
+
+.idvcgrid_cell_items_container {
+    margin-left: 8px;
+    min-width: 5em;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    pointer-events: none;
+}
+
+.idvcgrid_disabler {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: ThreeDFace;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5000;
+    text-align: center;
+    padding-top: 1em;
+    font-size: xx-large;
+    text-shadow: 0 0 0.5em white;
+}
+
+.idvc_disable_hover,
+.idvc_disable_hover * {
+  pointer-events: none;
+}
+
+.idvc_disable,
+.idvc_disable * {
+  pointer-events: none;
+  color: GrayText !important;
+}
+
+.idvc_disable .idvcgrid_selected_row {
+    background-color: Window !important;
+}
+
+.idvc_disable .idvcgrid_current_row {
+    border-color: transparent !important;
+}
+
+.idvc_disable .idvcgrid_current_row + .idvcgrid_cell {
+    border-top-color: ThreeDLightShadow !important;
+}
+
+.idvcsplitter_horz_primary {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.idvcsplitter_horz_splitter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.3em;
+    cursor: ew-resize;
+    box-sizing: border-box;
+}
+
+.idvcsplitter_horz_secondary {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.idvcsplitter_vert_primary {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.idvcsplitter_vert_splitter {
+    position: absolute;
+    left: 0;
+    height: 0.3em;
+    right: 0;
+    cursor: ns-resize;
+    box-sizing: border-box;
+}
+
+.idvcsplitter_vert_secondary {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.idvcsplitter_folded {
+    cursor: pointer;
+}
+
+.idvcsplitter_sash {
+    cursor: pointer;
+}
+
+.idvcsplitter_vert_splitter > .idvcsplitter_sash {
+    position: relative;
+    width: 2em;
+    margin: auto;
+    height: 100%;
+}
+
+.idvcsplitter_vert_splitter > .idvcsplitter_sash:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 1px;
+    bottom: 1px;
+    background: repeating-linear-gradient(90deg, GrayText, GrayText 2px, transparent 2px, transparent 4px);
+    border: 0;
+    margin: 0;
+}
+
+.idvcsplitter_horz_splitter > .idvcsplitter_sash {
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    top: 50%;
+    margin-top: -1em;
+}
+
+.idvcsplitter_horz_splitter > .idvcsplitter_sash:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    right: 1px;
+    background: repeating-linear-gradient(180deg, GrayText, GrayText 2px, transparent 2px, transparent 4px);
+    border: 0;
+    margin: 0;
+}
+
+.idvc_hierarchy_caption {
+    position: relative;
+    cursor: pointer;
+    margin-left: 1.1em;
+}
+
+.idvc_hierarchy_caption:before {
+    content: "";
+    position: absolute;
+    padding: 0;
+    width: 0;
+    height: 0;
+    margin: -0.2em 0.32em 0 0;
+    border-style: solid;
+    border-width: 0.34em 0 0.34em 0.68em;
+    border-color: transparent transparent transparent currentColor;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    left: -1em;
+    top: 0.45em;
+    color: GrayText;
+}
+
+.idvc_hierarchy_caption:hover:before {
+    color: WindowText;
+}
+
+.idvc_hierarchy_caption.idvc_hierarchy_expanded:before {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.idvc_hierarchy_body {
+    display: none;
+    overflow: hidden;
+    cursor: default;
+    margin-left: 1.1em;
+}
+
+.idvc_hierarchy_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.idvc_hierarchy_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.idvc_hierarchy_caption.idvc_hierarchy_expanded + .idvc_hierarchy_body {
+    display: flex;
+    flex-direction: column;
+}

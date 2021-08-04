@@ -1,0 +1,117 @@
+.idvcchart_content {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  -moz-user-select: -moz-none;
+  user-select: none;
+}
+
+.idvcchart_vertaxis {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 11ch;
+}
+
+.idvcchart_right .idvcchart_vertaxis {
+  left: auto;
+  right: 0;
+}
+
+.idvcchart_horzaxis {
+  position: absolute;
+  left: 11ch;
+  bottom: 0;
+  height: 2em;
+  right: 0;
+}
+
+.idvcchart_right .idvcchart_horzaxis {
+  left: 0;
+  right: 11ch;
+}
+
+.idvcchart_top .idvcchart_horzaxis {
+  top: 0;
+  bottom: auto;
+}
+
+.idvcchart_body {
+  position: absolute;
+  left: 11ch;
+  top: 0;
+  bottom: 2em;
+  right: 0;
+}
+
+.idvcchart_right .idvcchart_body {
+  left: 0;
+  right: 11ch;
+}
+
+.idvcchart_top .idvcchart_body {
+  top: 2em;
+  bottom: 0;
+}
+
+.idvc_canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.idvc_active {
+  pointer-events: auto;
+}
+
+.idvc_hidden {
+  visibility: hidden;
+}
+
+.idvcchart_axis {
+  fill: none;
+  stroke: gray;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  shape-rendering: crispEdges;
+}
+
+.idvcchart_axis_text {
+  fill: white;
+  stroke: none;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.idvcchart_axis_text_secondary {
+  font-size: 90%;
+}
+
+.idvcchart_roofline_text {
+  fill: white;
+  stroke: none;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.idvcchart_empty {
+  fill: none;
+  stroke: none;
+}
+
+.idvcchart_tooltip {
+    margin-top: 2em !important;
+    margin-left: 1em;
+    padding: 4px !important;
+}
+
+.idvcchart_selection {
+  pointer-events: none;
+  fill: blue;
+  stroke: blue;
+  stroke-width: 1;
+  opacity: 0.15;
+}

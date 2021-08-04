@@ -1,0 +1,60 @@
+Mini-Application Name: miniFE
+Mini-Application Version: 2.0
+Global Run Parameters: 
+  dimensions: 
+    nx: 100
+    ny: 100
+    nz: 100
+  load_imbalance: 0
+  mv_overlap_comm_comp: 0 (no)
+  number of processors: 1
+  ScalarType: double
+  GlobalOrdinalType: int
+  LocalOrdinalType: int
+Platform: 
+  hostname: jlselogin1
+  kernel name: 'Linux'
+  kernel release: '3.10.0-957.10.1.el7.x86_64'
+  processor: 'x86_64'
+Build: 
+  CXX: '/soft/restricted/intel_dga/modulefiles/dpcpp/2019.9.30.013b_wrapper/clang++'
+  compiler version: 'DPC++ Compiler 2021.1 (2019.8.x.0.0918)'
+  CXXFLAGS: '-std=c++11 -fsycl -g -DTSC'
+  using MPI: no
+Run Date/Time: 2019-11-07, 02-55-42
+Rows-per-proc Load Imbalance: 
+  Largest (from avg, %): 0
+  Std Dev (%): 0
+Matrix structure generation: 
+  Mat-struc-gen Time: 3.02407
+FE assembly: 
+  FE assembly Time: 9.40248
+Matrix attributes: 
+  Global Nrows: 1030301
+  Global NNZ: 27818127
+  Global Memory (GB): 0.318568
+  Pll Memory Overhead (MB): 0
+  Rows per proc MIN: 1030301
+  Rows per proc MAX: 1030301
+  Rows per proc AVG: 1.0303e+06
+  NNZ per proc MIN: 27818127
+  NNZ per proc MAX: 27818127
+  NNZ per proc AVG: 2.78181e+07
+CG solve: 
+  Iterations: 200
+  Final Resid Norm: 7.00971e-07
+  WAXPY Time: 0.213231
+  WAXPY Flops: 1.806e+09
+  WAXPY Mflops: 8469.7
+  DOT Time: 3.54249
+  DOT Flops: 8e+08
+  DOT Mflops: 225.83
+  MATVEC Time: 0.0618117
+  MATVEC Flops: 1.11829e+10
+  MATVEC Mflops: 180919
+  Total: 
+    Total CG Time: 3.89823
+    Total CG Flops: 1.37889e+10
+    Total CG Mflops: 3537.22
+  Time per iteration: 0.0194912
+Total Program Time: 29.8634

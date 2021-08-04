@@ -1,0 +1,50 @@
+.idvcroofline_point {
+    stroke: cyan;
+    fill: lightblue;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    shape-rendering: geometricPrecision;
+}
+
+.idvcroofline_point_selected {
+    stroke: lightgrey;
+    fill: royalblue;
+}
+
+.idvcroofline_point_current {
+    stroke: white;
+}
+
+.idvcroofline_point_current.idvcroofline_point_selected {
+    fill: deepskyblue;
+}
+
+.idvcroofline_line {
+    stroke: yellow;
+    fill: none;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    shape-rendering: crispEdges;
+}
+
+.idvcroofline_grid_line {
+    stroke: lightgray;
+    fill: none;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    shape-rendering: crispEdges;
+}
+
+.idvcchart_roofline_text {
+    cursor: default;
+}
+
+.idvcchart_roofline_center_marker {
+    fill: none;
+    stroke-width: 1;
+    stroke: black;
+}
+
+.idvcchart_roofline_center_marker.active {
+    stroke: blue;
+}

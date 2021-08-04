@@ -1,0 +1,5 @@
+
+11003:perf-sync:ready:TSC=3768931144164944
+[ perf record: Woken up 47 times to write data ]
+[ perf record: Packed 1.492 MB of 12.053 MB, ratio is 8.078 ]
+[ perf record: Captured and wrote 1.589 MB /tmp/amplxe-tmp-pvelesko/amplxe-res-10982-3768928749223962/data.0/system-wide.perf ]

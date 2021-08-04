@@ -1,0 +1,5 @@
+all:
+	icpx  -fopenmp -fiopenmp -fopenmp-targets=spir64 -fsycl ./one_plus_one.cpp --gcc-toolchain=/soft/packaging/spack-builds/linux-rhel7-x86_64/gcc-9.3.0/gcc-9.3.0-qfmcwfbuvnpn47zxjzfjvodzjl6reerh/
+
+clean:
+	rm ./one_plus_one

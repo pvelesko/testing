@@ -1,0 +1,60 @@
+GTPin version 2.2-eng (2103c87d)
+
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/icc_cmplr_omp/compiler/lib/intel64_lin/libimf.so, 0x1480002d1740)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/compilers/gcc/7.4.0/linux-rhel7-x86_64/lib64/libstdc++.so.6, 0x147fffd80d28)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libm.so.6, 0x147fffa03d90)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/icc_cmplr_omp/compiler/lib/intel64_lin/libiomp5.so, 0x147fff6c7ea0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/icc_cmplr_omp/lib/libomptarget.so, 0x147fff319d50)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/compilers/gcc/7.4.0/linux-rhel7-x86_64/lib64/libgcc_s.so.1, 0x147fff108dd0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libpthread.so.0, 0x147ffeeedd50)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libc.so.6, 0x147ffeccfb80)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libdl.so.2, 0x147ffe908d88)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/icc_cmplr_omp/compiler/lib/intel64_lin/libintlc.so.5, 0x147ffe702648)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/ld-linux-x86-64.so.2, 0x14800703ce00)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/home/pvelesko/intel/dpcpp_bundle_1.0_prealpha_u8_020/vtune_amplifier_2019/lib64/libged.so, 0x147ffb8e48a0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/home/pvelesko/intel/dpcpp_bundle_1.0_prealpha_u8_020/vtune_amplifier_2019/lib64/libgtpin.so, 0x147ffb2d1b68)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/home/pvelesko/intel/dpcpp_bundle_1.0_prealpha_u8_020/vtune_amplifier_2019/lib64/libiga_wrapper.so, 0x147ffae2c1e0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/home/pvelesko/intel/dpcpp_bundle_1.0_prealpha_u8_020/vtune_amplifier_2019/lib64/runtime/libittnotify_collector.so, 0x147ffaa503f0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/icc_cmplr_omp/lib/libomptarget.rtl.opencl.so, 0x147ff9602d30)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/dpcpp_compiler/lib/libOpenCL.so.1, 0x147ff93f7d80)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/usr/local/lib64/intel-opencl/libigdrcl.so, 0x147ff9157340)
+[DRIVER_API] Completed succesfuly initialization of GTPin <-> Driver Interface
+[DRIVER_INST] Instrumented OCL driver with new interface
+[DRIVER_INST] GTPIN_ImageLoadCallback(/usr/local/lib64/libigdgmm.so.9, 0x147ef3ffdda0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/usr/local/lib64/libigdfcl.so.1, 0x147ef34f0240)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/librt.so.1, 0x147ef322ad70)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/usr/local/lib64/libopencl-clang.so.7.1, 0x147eeb94d9a8)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libz.so.1, 0x147ef3022c38)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libxml2.so.2, 0x147ef2e09b30)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/liblzma.so.5, 0x147ef2aa2dc0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/usr/local/lib64/libigc.so.1, 0x147ee70cd670)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/dpcpp_compiler/lib/oclcpu/libintelocl.so, 0x147ef065a660)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/dpcpp_compiler/lib/oclcpu/libtask_executor.so.9.0, 0x147ef02d46a0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/dpcpp_compiler/lib/oclcpu/libcl_logger.so.9.0, 0x147eebffe7e0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/tbb/lib/intel64/gcc4.7/libtbb.so.2, 0x147ee4444160)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/tbb/lib/intel64/gcc4.7/libtbbmalloc.so.2, 0x147ee41c7780)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/dpcpp_compiler/lib/oclcpu/libcpu_device.so, 0x147edf06e700)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/soft/restricted/intel_dga/sdk/2019.4.30.004/icc_cmplr_omp/lib/libomptarget.rtl.x86_64.so, 0x147edf876d68)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libffi.so.6, 0x147edee12df0)
+[DRIVER_INST] GTPIN_ImageLoadCallback(/lib64/libelf.so.1, 0x147edec0ada8)
+[DRIVER_API] Create Context was called with handle: 0x22063a0
+[DRIVER_API] Kernel Create was called
+[DRIVER_API] generated hash id: 0xdbf4251c56d48502
+[DRIVER_API] start instrumenting kernel 0xdbf4251c56d48502
+[CFG] Successfully built the CFG
+[PRE_INST] Instrumenting kernel. Kernel: __omp_offloading_2d_48e04dd_main_l5_0
+[CFG] Successfully built the CFG
+[DRIVER_API] successfully instrumented kernel 0xdbf4251c56d48502
+[DRIVER_API] Create Kernel Completed - Artifacts:
+ GTPin's kernel hash = 0xdbf4251c56d48502
+Instrumented size = 832
+
+[DRIVER_API] Create Command Buffer was called with handle: 0x1
+[DRIVER_API] Kernel Submit was called for id: 0xdbf4251c56d48502
+[MEMORY] ContextResourceAllocatorBasic::AllocateResource - so far allocated 32768 bytes (8 pages = 0 MB)
+[MEMORY] GenKernelRun: kernel __omp_offloading_2d_48e04dd_main_l5 allocated buffer of 8 pages
+[DRIVER_API] kernel id: 0xdbf4251c56d48502 submitted with offset: 0xc0
+[DRIVER_API] Completion was called for command buffer: 0x1
+[DRIVER_API] Completion triggered for kernel 0xdbf4251c56d48502
+
+** EOF **

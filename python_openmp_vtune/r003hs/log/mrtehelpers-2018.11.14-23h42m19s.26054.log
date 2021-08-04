@@ -1,0 +1,5 @@
+515 [47417097799424] TRACE mrtehelpers.mrteenv <> - ENTER: virtual mrtehelpers_3_0::MrteEnvVarIterator mrtehelpers_3_0::MrteProfilingInitializer::getMrteProfilingEnvironment()
+515 [47417097799424] TRACE mrtehelpers.mrteenv <> - INTEL_MRTE_DATA_DIR=/tmp/amplxe-tmp-pvelesko/amplxe-res-26054-4363425959699490/data.0/
+515 [47417097799424] TRACE mrtehelpers.mrteenv <> - INTEL_MRTE_HOST_NAME=jlselogin1
+517 [47417097799424] TRACE mrtehelpers.mrteenv <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/soft/compilers/intel/vtune_amplifier_2018.1.0.535340/lib32/runtime:/soft/compilers/intel/vtune_amplifier_2018.1.0.535340/lib64/runtime
+517 [47417097799424] TRACE mrtehelpers.mrteenv <> - EXIT:  virtual mrtehelpers_3_0::MrteEnvVarIterator mrtehelpers_3_0::MrteProfilingInitializer::getMrteProfilingEnvironment()

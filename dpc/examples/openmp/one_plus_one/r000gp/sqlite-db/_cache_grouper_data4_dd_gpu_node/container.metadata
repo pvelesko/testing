@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bag xmlns:unsignedLong="http://www.w3.org/2001/XMLSchema#unsignedLong">
+ <entry path="grouper" unsignedLong:size="5">
+  <indexFields>
+   <field path="dd_gpu_node"/>
+   <field path="gpu_compute_task_data"/>
+   <field path="gpu_compute_task_data_scale"/>
+  </indexFields>
+  <int64Fields>
+   <field path="gpu_compute_task_data_duration"/>
+  </int64Fields>
+  <doubleFields>
+   <field path="gpu_compute_task_data_count"/>
+   <field path="gpu_compute_task_data_inst_count"/>
+  </doubleFields>
+ </entry>
+</bag>

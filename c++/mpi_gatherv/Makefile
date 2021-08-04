@@ -1,0 +1,2 @@
+all:
+	mpiicpc ./main.cpp

@@ -1,0 +1,54 @@
+Libomptarget --> Initialized OMPT
+Libomptarget --> Loading RTLs...
+Libomptarget --> Loading library 'libomptarget.rtl.opencl.so'...
+Libomptarget --> Successfully loaded library 'libomptarget.rtl.opencl.so'!
+Libomptarget --> Optional interface: __tgt_rtl_data_submit_nowait
+Libomptarget --> Optional interface: __tgt_rtl_data_retrieve_nowait
+Libomptarget --> Optional interface: __tgt_rtl_manifest_data_for_region
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_base
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_user
+Libomptarget --> Optional interface: __tgt_rtl_create_buffer
+Libomptarget --> Optional interface: __tgt_rtl_get_device_name
+Libomptarget --> Optional interface: __tgt_rtl_release_buffer
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_nd_region
+Libomptarget --> Optional interface: __tgt_rtl_run_target_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_nd_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_create_offload_pipe
+Libomptarget --> Optional interface: __tgt_rtl_release_offload_pipe
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_managed
+Libomptarget --> Optional interface: __tgt_rtl_data_delete_managed
+Libomptarget --> Optional interface: __tgt_rtl_is_managed_ptr
+Libomptarget --> Registering RTL libomptarget.rtl.opencl.so supporting 1 devices!
+Libomptarget --> Loading library 'libomptarget.rtl.level0.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.level0.so': libze_loader.so.0.91: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.ppc64.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.ppc64.so': libomptarget.rtl.ppc64.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.x86_64.so'...
+Libomptarget --> Successfully loaded library 'libomptarget.rtl.x86_64.so'!
+Libomptarget --> Registering RTL libomptarget.rtl.x86_64.so supporting 4 devices!
+Libomptarget --> Loading library 'libomptarget.rtl.cuda.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.cuda.so': libomptarget.rtl.cuda.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.aarch64.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.aarch64.so': libomptarget.rtl.aarch64.so: cannot open shared object file: No such file or directory!
+Libomptarget --> RTLs loaded!
+Libomptarget --> Image 0x0000000000400ef0 is compatible with RTL libomptarget.rtl.opencl.so!
+Libomptarget --> RTL 0x00000000024a9a80 has index 0!
+Libomptarget --> Registering image 0x0000000000400ef0 with RTL libomptarget.rtl.opencl.so!
+Libomptarget --> Done registering entries!
+Libomptarget --> Call to omp_get_num_devices returning 1
+Libomptarget --> Default TARGET OFFLOAD policy is now mandatory (devices were found)
+Libomptarget --> Entering target region with entry point 0x0000000000400db9 and device Id -1
+Libomptarget --> Checking whether device 0 is ready.
+Libomptarget --> Is the device 0 (local ID 0) initialized? 0
+Libomptarget --> Device 0 is ready to use.
+Libomptarget --> Unable to generate entries table for device id 0.
+Libomptarget --> Failed to init globals on device 0
+Libomptarget --> Failed to get device 0 ready
+Libomptarget fatal error 1: failure of target construct while offloading is mandatory
+Libomptarget --> Unloading target library!
+Libomptarget --> Image 0x0000000000400ef0 is compatible with RTL 0x00000000024a9a80!
+Libomptarget --> Unregistered image 0x0000000000400ef0 from RTL 0x00000000024a9a80!
+Libomptarget --> Done unregistering images!
+Libomptarget --> Removing translation table for descriptor 0x0000000000400ec0
+Libomptarget --> Done unregistering library!

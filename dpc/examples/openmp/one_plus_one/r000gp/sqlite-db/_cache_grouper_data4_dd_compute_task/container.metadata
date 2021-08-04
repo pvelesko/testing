@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bag xmlns:unsignedLong="http://www.w3.org/2001/XMLSchema#unsignedLong">
+ <entry path="grouper" unsignedLong:size="43">
+  <indexFields>
+   <field path="dd_compute_task"/>
+   <field path="gpu_gtpin_data_attr_callsite"/>
+   <field path="gpu_gtpin_data_attr_event_type"/>
+   <field path="gpu_gtpin_data_compute_task_type"/>
+   <field path="gpu_gtpin_data_scale"/>
+  </indexFields>
+  <int64Fields>
+   <field path="gpu_gtpin_data_duration"/>
+   <field path="gpu_gtpin_data_count"/>
+   <field path="gpu_gtpin_data_inst_count"/>
+  </int64Fields>
+  <doubleFields/>
+ </entry>
+</bag>

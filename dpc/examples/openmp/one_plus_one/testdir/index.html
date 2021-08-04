@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Roofline</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="stylesheet" href="idvcjs/grid_styles.css" type="text/css">
+<link rel="stylesheet" href="idvcjs/roofline_styles.css" type="text/css">
+<link rel="stylesheet" href="idvcjs/chart_styles.css" type="text/css">
+<script type="text/javascript" src="require.js">
+</script>
+<script type="text/javascript" src="main.js">
+</script>
+</head>
+<body class="body_area data_loading">
+<div class="top_report_area report_only">
+    <span class="background_layer"></span>
+    <span id="summary_info_result_path" data-tooltip="%roofline_path_to_results%" class="path"></span>
+    <span class="brand_name">
+      <i>Roofline Chart from the </i>Intel<sup>&reg;</sup><a href="https://software.intel.com/en-us/advisor" data-tooltip="%roofline_product_link_title%">Advisor</a>
+    </span>
+</div>
+<div id="summary_info_bar" class="br toolbar_item_bar summary_info report_only">
+  <div id="summary_info_control" class="roofline_toolbar_control">
+      <div id="summary_info_panel" class="roofline_toolbar_control_items roofline_popup_shadow text">
+          <ul class="item">
+              <li id="summary_info_project"></li>
+              <li id="summary_collected_on">%roofline_collected_on%</li>
+          </ul>
+          <div class="roofline_toolbar_control_caption roofline_group_caption_colors">%roofline_summary_program_metrics%</div>
+          <ul id="program_metrics_items" class="item"></ul>
+          <div class="roofline_toolbar_control_caption roofline_group_caption_colors">%roofline_summary_loop_metrics%</div>
+          <ul id="loop_metrics_items" class="item"></ul>
+          <div class="roofline_toolbar_control_caption roofline_group_caption_colors">%roofline_summary_platform_info%</div>
+          <ul id="platform_info_items" class="item"></ul>
+      </div>
+      <span class="roofline_toolbar_control_content">%roofline_summary_result%</span>
+      <div class="zoom_button icon select"></div>
+  </div>
+</div>
+<div class="content">
+<div class="zoom_toolbar hidden4copy" id="roofline_zoom_toolbar">
+    <span id="select_point" data-tooltip="%roofline_toolbar_select_point%" class="zoom_button icon cursor"></span>
+    <span id="select_zoom" data-tooltip="%roofline_toolbar_select_zoom%" class="zoom_button icon magnifier"></span>
+    <span id="select_hand" data-tooltip="%roofline_toolbar_select_move%" class="zoom_button icon hand"></span>
+    <span id="undo_zoom" data-tooltip="%roofline_toolbar_undo%" class="zoom_button icon undo"></span>
+    <span id="redo_zoom" data-tooltip="%roofline_toolbar_redo%" class="zoom_button icon redo"></span>
+    <span id="cancel_zoom" data-tooltip="%roofline_toolbar_cancel_zoom%" class="zoom_button icon cross"></span>
+    <label id="copy_content_control" class="no_report">
+        <span id="copy_content" data-tooltip="%roofline_toolbar_html_export%" class="zoom_button icon export"></span>
+        <div id="copy_content_select" class="zoom_button icon select cling_button">
+            <ul id="copy_content_items" class="zoom_select_items roofline_popup_shadow radio extra_space">
+                <li id="export_as_html" class="selected splitter">%roofline_toolbar_html_export%</li>
+                <li id="export_as_svg">%roofline_toolbar_svg_export%
+                        <label style="display:none"><input type="text" class="no_close_popup" disabled="disabled"></label>
+                    <br><label class="zoom_select_prop">%roofline_toolbar_svg_width%<input type="text" width="true" class="zoom_select_prop_input no_close_popup"></label>
+                    <br><label class="zoom_select_prop">%roofline_toolbar_svg_height%<input type="text" class="zoom_select_prop_input no_close_popup"></label>
+                </li>
+            </ul>
+        </div>
+    </label>
+    <label id="roofline_cores_bar" class="br toolbar_item_bar">
+        <div id="roofline_cores_control" class="roofline_toolbar_control">
+            <div id="roofline_cores_select_items" class="roofline_toolbar_control_items no_close_popup roofline_popup_shadow">
+                <ul id="core_number_items" class="zoom_select_items no_close_popup"></ul>
+            </div>
+            <span class="roofline_cores_caption">%roofline_N_threaded_roofs%</span>
+            <span id="roofline_cores_content" class="roofline_toolbar_control_content"></span>
+            <label class="explanation_symbol" data-tooltip="%roofline_N_threaded_roofs_expl%">?</label>
+            <div id="roofline_cores_select" class="zoom_button icon select"></div>
+        </div>
+    </label>
+    <label id="roofline_type_bar" class="br always_visible toolbar_item_bar no_report">
+        <div id="roofline_type_control" class="roofline_toolbar_control">
+            <div id="roofline_type_select_items" class="roofline_toolbar_control_items no_close_popup roofline_popup_shadow">
+                <div id="roofline_type_select_body" class="no_close_popup roofline_type_select_items">
+                    <form style="display:none">
+                        <label><input type="radio" class="no_close_popup" disabled="disabled"></label>
+                    </form>
+                </div>
+                <div class="roofline_toolbar_control_btns no_close_popup">
+                    <button>%roofline_settings_roof_default%</button>
+                    <button>%roofline_configuration_apply%</button>
+                    <button>%roofline_configuration_cancel%</button>
+                </div>
+            </div>
+            <span id="roofline_type_content" class="roofline_toolbar_control_content pictured"></span>
+            <div id="roofline_type_select" class="zoom_button icon select"></div>
+        </div>
+    </label>
+    <label id="roofline_compare_bar" class="br toolbar_item_bar">
+        <div id="roofline_compare_control" class="roofline_toolbar_control">
+            <div id="roofline_compare_select_items" class="roofline_toolbar_control_items no_close_popup roofline_popup_shadow">
+                <span id="load_compare" data-tooltip="%roofline_toolbar_load_compare%" class="zoom_button icon compare no_close_popup no_report"></span>
+                <div class="roofline_toolbar_control_caption roofline_group_caption_colors no_report">%roofline_compare_results_label%
+                    <span id="delete_compare" data-tooltip="%roofline_toolbar_clear_compare%" class="zoom_button icon cross no_close_popup no_report disabled clear_compare"></span>
+                </div>
+                <ul id="loaded_compare_items" class="zoom_select_items pictured no_close_popup"></ul>
+                <div class="roofline_toolbar_control_caption roofline_group_caption_colors no_report">%roofline_compare_recent_label%</div>
+                <ul id="ready_compare_items" class="zoom_select_items no_report no_close_popup"></ul>
+            </div>
+            <span id="roofline_compare_content" class="roofline_toolbar_control_content pictured">%roofline_compare_nodata_label%</span>
+            <div id="roofline_compare_select" class="zoom_button icon select"></div>
+        </div>
+    </label>
+    <div id="expand_toolbar_content" class="expand_button icon expand"></div>
+</div>
+<div class="menu_button hidden4copy" id="roofline_menu_button">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div class="settings" id="roofline_settings">
+    <div class="settings_title roofline_group_caption_colors">%roofline_settings_representation_caption%</div>
+    <label class="single_settings_item">
+        <input type="checkbox" class="settings_item" id="use_zone_coloring">%roofline_settings_zone_coloring%
+    </label>
+    <div class="single_settings_item roofline_view_mode_setting" id="roofline_view_mode">
+        <label class="radio_settings_item">
+            <input type="radio" class="" name="rooflineviewmode" value="fittoview">%roofline_settings_fit_to_view%
+            <label class="explanation_symbol" data-tooltip="%roofline_settings_fit_to_view_expl%">?</label>
+        </label>
+        <label class="radio_settings_item">
+            <input type="radio" class="" name="rooflineviewmode" value="onewideview">%roofline_settings_one_view%
+            <label class="explanation_symbol" data-tooltip="%roofline_settings_one_view_expl%">?</label>
+        </label>
+    </div>
+    <div class="settings_title roofline_group_caption_colors">%roofline_settings_roofs_caption%</div>
+    <label class="single_settings_item roofs_strategy_setting">
+        <input type="checkbox" class="toolbar_item_input" id="use_single_thread_strategy">%roofline_settings_use_single_thread_strategy%
+        <label class="explanation_symbol" data-tooltip="%roofline_settings_use_single_thread_strategy_expl%">?</label>
+    </label>
+    <table id="roofs_table" class="roofs_table">
+        <thead>
+            <tr>
+                <th>%roofline_settings_roof_name%</th>
+                <th>%roofline_settings_roof_visible%</th>
+                <th>%roofline_settings_roof_selected%</th>
+                <th style="white-space:nowrap"><label>%roofline_settings_roof_value%</label><button id="revert_roofs_values_settings_button">%roofline_settings_roof_default%</button></th>
+            </tr>
+        </thead>
+        <tbody id="roofs_table_body">
+        </tbody>
+    </table>
+    <div>
+        <button id="load_roofs_settings_button" class="loadsave_settings_button">%roofline_settings_roof_load%</button>
+        <button id="save_roofs_settings_button" class="loadsave_settings_button">%roofline_settings_roof_save%</button>
+    </div>
+    <div class="settings_title roofline_group_caption_colors">%roofline_settings_loop_caption%
+        <button id="cancel_loops_settings_button" class="cancel_loops_settings_button">%roofline_settings_loop_cancel%</button>
+        <button id="revert_loops_settings_button" class="revert_loops_settings_button">%roofline_settings_loop_default%</button>
+    </div>
+    <table id="loops_table">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th align="left"><label class="settings_item_caption" ><input type="checkbox" value="size" class="settings_item" checked>%roofline_settings_loop_size%</label></th>
+                <th align="left"><label class="settings_item_caption" >%roofline_settings_loop_color%</label>
+                    <div class="settings_item combo">
+                        <select id="color_mode_combo" class="color_mode_combo">
+                            <option value="none">%roofline_settings_loop_color_fixed%</option>
+                            <option value="time">%roofline_settings_loop_color_time%</option>
+                            <option value="vector">%roofline_settings_loop_color_vectorization%</option>
+                        </select>
+                    </div>
+                </th>
+                <th class="visibility_setting_caption">%roofline_settings_loop_visible%</th>
+            </tr>
+        </thead>
+        <tbody id="loops_table_body">
+        </tbody>
+    </table>
+    <div>
+        <label class="settings_item_caption def_color_item">%roofline_settings_loop_color_default%
+            <div class="loop_sample loop_fixed_sample" id="roofline_def_loop_color_sample"></div>
+            <input class="color_input def_color_item" id="roofline_def_loop_color_edit">
+        </label>
+    </div>
+    <div>
+        <label class="settings_item_caption no_self_time_item">%roofline_settings_loop_color_nst%
+            <div class="loop_sample loop_fixed_sample" id="roofline_nst_loop_color_sample"></div>
+            <input class="color_input no_self_time_item" id="roofline_nst_loop_color_edit">
+        </label>
+    </div>
+    <div>
+        <button id="load_loops_settings_button" class="loadsave_settings_button">%roofline_settings_roof_load%</button>
+        <button id="save_loops_settings_button" class="loadsave_settings_button">%roofline_settings_roof_save%</button>
+    </div>
+</div>
+<div class="summary hidden4copy" id="roofline_summary">
+    <label class="br">
+        <span class="summary_caption">%roofline_physical_cores_count%</span>
+        <span id="cores_value" class="summary_value"></span>
+        <label class="explanation_symbol" data-tooltip="%roofline_cores_expl%">?</label>
+    </label>
+    <label class="br">
+        <span class="summary_caption">%roofline_used_threads_count%</span>
+        <span id="threads_value" class="summary_value"></span>
+        <label class="explanation_symbol" data-tooltip="%roofline_threads_expl%">?</label>
+    </label>
+    <label class="br tmp">
+        <span id="self_caption" class="summary_caption"></span>
+        <span id="self_value" class="summary_value flash"></span>
+        <span id="self_measure" class="summary_measure"></span>
+    </label>
+    <label class="br tmp">
+        <span id="total_caption" class="summary_caption"></span>
+        <span id="total_value" class="summary_value flash"></span>
+        <span id="total_measure" class="summary_measure"></span>
+    </label>
+    <div id="expand_summary_content" class="expand_button icon expand"></div>
+</div>
+<div class="top_area">
+</div>
+<div class="main_area" id="roofline_content">
+</div>
+<div class="bottom_area">
+</div>
+<div class="zoom_button icon frame_settings hidden4copy" id="roofline_frame_settings">
+</div>
+<div class="frame_settings_cover frame_settings_area">
+</div>
+<div class="frame_settings_axis vert frame_settings_area">
+    <input class="frame_settings_input" id="frame_max_perf">
+    <input class="frame_settings_input" id="frame_min_perf">
+</div>
+<div class="frame_settings_axis horz frame_settings_area">
+    <input class="frame_settings_input" id="frame_min_intens">
+    <input class="frame_settings_input" id="frame_max_intens">
+</div>
+<div class="frame_settings_corner frame_settings_area">
+    <button class="frame_settings_button icon ok" id="frame_apply_btn"></button>
+    <button class="frame_settings_button icon cross" id="frame_cancel_btn"></button>
+</div>
+</div>
+<div class="data_loading_message" id="roofline_data_loading_message">%roofline_loading%</div>
+<div class="no_data_message_container">
+    <div class="no_data_message">
+        <div class="no_data_message_title"></div>
+        <div class="no_data_message_content"></div>
+    </div>
+</div>
+</body>
+</html>

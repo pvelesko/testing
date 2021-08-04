@@ -1,0 +1,161 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 18.0.1.163 Build 20171018
+
+Compiler options: -O3 -g -qopt-report=5 -qopenmp -o driver
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: true
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: true
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: true
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 1 (user-specified)
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: disabled
+  -inline-max-per-compile: disabled
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: DRIVER
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (DRIVER) [1/9=11.1%] driver.f90(1,9)
+  -> EXTERN: (1,9) for_set_reentrancy
+  -> INLINE: (9,7) COMPUTE_MOD::COMP (isz = 8) (sz = 19)
+   -> INDIRECT: raddr(my_module_mp_fun1_)(P64)
+       -gpt-> my_module_mp_fun1_
+        -> INLINE: compute.f90:(18,11) MY_MODULE::FUN1 (isz = 2) (sz = 9)
+    -> INLINE: compute.f90:(21,11) MY_MODULE::COMP_T (isz = 2) (sz = 7)
+  -> EXTERN: (10,2) for_write_seq_lis_xmit
+  -> EXTERN: (10,2) for_write_seq_lis_xmit
+  -> EXTERN: (10,2) for_write_seq_lis_xmit
+  -> EXTERN: (10,2) for_write_seq_lis
+
+
+    Report from: Code generation optimizations [cg]
+
+driver.f90(1,9):remark #34051: REGISTER ALLOCATION : [MAIN__] driver.f90:1
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    7[ rax rdx rcx rsi rdi r8 r13]
+        
+    Routine temporaries
+        Total         :      44
+            Global    :       8
+            Local     :      36
+        Regenerable   :      38
+        Spilled       :       1
+        
+    Routine stack
+        Variables     :     108 bytes*
+            Reads     :       2 [0.00e+00 ~ 0.0%]
+            Writes    :       8 [6.00e+00 ~ 17.1%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: my_module._
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (my_module._) my_module.f90(1,8)
+
+===========================================================================
+
+Begin optimization report for: MY_MODULE::FUN1
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (MY_MODULE::FUN1) my_module.f90(8,12)
+
+===========================================================================
+
+Begin optimization report for: MY_MODULE::FUN2
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (MY_MODULE::FUN2) my_module.f90(15,12)
+
+===========================================================================
+
+Begin optimization report for: MY_MODULE::SUB1
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (MY_MODULE::SUB1) my_module.f90(22,16)
+
+===========================================================================
+
+Begin optimization report for: MY_MODULE::SUB2
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (MY_MODULE::SUB2) my_module.f90(30,16)
+
+===========================================================================
+
+Begin optimization report for: compute_mod._
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (compute_mod._) compute.f90(1,8)
+
+===========================================================================
+
+Begin optimization report for: COMPUTE_MOD::COMP
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (COMPUTE_MOD::COMP) compute.f90(6,16)
+
+===========================================================================
+
+Begin optimization report for: MY_MODULE::COMP_T
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (MY_MODULE::COMP_T) my_module.f90(39,14)
+
+===========================================================================
+
+    Report from: Profile guided optimizations [pgo]
+
+
+
+Profile feedback used a statically estimated profile for the following routines:
+
+  File: driver.f90
+        DRIVER[Line     1]
+
+
+  0 out of 1 routine(s) used training profile data for PGO feedback
+  0 out of 1 routine(s) were unable to use training profile data for PGO feedback
+  0 out of 1 routine(s) were unable to find training profile data for PGO feedback
+  1 out of 1 routine(s) used a static estimate profile for PGO feedback
+
+
+

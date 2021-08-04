@@ -1,0 +1,18 @@
+
+Function                             GPU Instructions Executed:Int32 & SP Float
+-----------------------------------  ------------------------------------------
+__omp_offloading_2e_48e04dd_main_l5                                          16
+Function                             GPU Instructions Executed:Int64 & DP Float
+-----------------------------------  ------------------------------------------
+__omp_offloading_2e_48e04dd_main_l5                                           8
+Computing Task                       Total Time
+-----------------------------------  ----------
+__omp_offloading_2e_48e04dd_main_l5      0.000s
+clEnqueueSVMMap                          0.000s
+clEnqueueSVMUnmap                        0.000s
+Computing Task                       EU Threads Occupancy(%)  L3 Shader Bandwidth, GB/sec  GPU Memory Read Bandwidth, GB/sec  GPU Memory Write Bandwidth, GB/sec
+-----------------------------------  -----------------------  ---------------------------  ---------------------------------  ----------------------------------
+__omp_offloading_2e_48e04dd_main_l5                     0.0%                        0.000                              0.000                               0.000
+clEnqueueSVMMap                                         0.0%                        0.000                              0.000                               0.000
+clEnqueueSVMUnmap                                       0.0%                        0.000                              0.000                               0.000
+[Outside any task]                                      0.0%                        0.000                              0.000                               0.001

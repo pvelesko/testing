@@ -1,0 +1,127 @@
+Intel(R) oneAPI DPC++ Compiler 2021.1-beta05 (2020.2.0.0304)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/4.8.2
+Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/4.8.5
+Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/4.8.5
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang++" -cc1 -triple spir64-unknown-unknown-sycldevice -fsycl-is-device -aux-triple x86_64-unknown-linux-gnu -disable-llvm-passes -sycl-std=1.2.1 -emit-llvm-bc -disable-free -disable-llvm-verifier -discard-value-names -main-file-name one_plus_one.cpp -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -dwarf-column-info -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0 -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu/ -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include -c-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include -cxx-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/pvelesko/testing/dpc/examples/openmp/one_plus_one -ferror-limit 19 -fmessage-length 0 -fopenmp-late-outline -fopenmp-threadprivate-legacy -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -mllvm -paropt=31 -faddrsig -o /tmp/one_plus_one-ea02e8.o -x c++ ./one_plus_one.cpp
+clang -cc1 version 11.0.0 based upon LLVM 11.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include"
+ignoring duplicate directory "/usr/include"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward
+ /usr/local/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include
+ /usr/include
+End of search list.
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/llvm-link" /tmp/one_plus_one-ea02e8.o -o /tmp/one_plus_one-8068c6.bc --suppress-warnings
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/llvm-spirv" -o /tmp/one_plus_one-ad0f4b.spv -spirv-max-version=1.1 -spirv-ext=+all /tmp/one_plus_one-8068c6.bc
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang-offload-wrapper" -o=/tmp/wrapper-950cbc.bc -host=x86_64-unknown-linux-gnu -target=spir64 -kind=sycl /tmp/one_plus_one-ad0f4b.spv
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/llc" -filetype=obj -o /tmp/one_plus_one-2f69a8.o /tmp/wrapper-950cbc.bc
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang++" -cc1 -triple spir64-unknown-unknown-sycldevice -fsycl-is-device -aux-triple x86_64-unknown-linux-gnu -disable-llvm-passes -sycl-std=1.2.1 -fsyntax-only -disable-free -disable-llvm-verifier -discard-value-names -main-file-name one_plus_one.cpp -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -dwarf-column-info -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0 -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu/ -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include -c-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include -cxx-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/pvelesko/testing/dpc/examples/openmp/one_plus_one -ferror-limit 19 -fmessage-length 0 -fopenmp-late-outline -fopenmp-threadprivate-legacy -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -fsycl-int-header=/tmp/one_plus_one-5a66c5.h -mllvm -paropt=31 -faddrsig -o /tmp/one_plus_one-5a66c5.h -x c++ ./one_plus_one.cpp
+clang -cc1 version 11.0.0 based upon LLVM 11.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include"
+ignoring duplicate directory "/usr/include"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward
+ /usr/local/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include
+ /usr/include
+End of search list.
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang++" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=1.2.1 -emit-llvm-bc -emit-llvm-uselists -disable-free -disable-llvm-verifier -discard-value-names -main-file-name one_plus_one.cpp -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0 -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu/ -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include -c-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include -cxx-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/pvelesko/testing/dpc/examples/openmp/one_plus_one -ferror-limit 19 -fmessage-length 0 -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -disable-llvm-passes -include /tmp/one_plus_one-5a66c5.h -dependency-filter /tmp/one_plus_one-5a66c5.h -fsycl-is-host -mllvm -paropt=31 -fopenmp-targets=spir64 -fsycl-targets=spir64-unknown-unknown-sycldevice -faddrsig -o /tmp/one_plus_one-e554d1.bc -x c++ ./one_plus_one.cpp
+clang -cc1 version 11.0.0 based upon LLVM 11.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward
+ /usr/local/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include
+ /usr/include
+End of search list.
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang++" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=1.2.1 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name one_plus_one.cpp -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0 -fdebug-compilation-dir /home/pvelesko/testing/dpc/examples/openmp/one_plus_one -ferror-limit 19 -fmessage-length 0 -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -mllvm -paropt=31 -fopenmp-targets=spir64 -faddrsig -o /tmp/one_plus_one-a7ea62.o -x ir /tmp/one_plus_one-e554d1.bc
+clang -cc1 version 11.0.0 based upon LLVM 11.0.0git default target x86_64-unknown-linux-gnu
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang++" -cc1 -triple spir64 -aux-triple x86_64-unknown-linux-gnu -emit-llvm-bc -emit-llvm-uselists -disable-free -disable-llvm-verifier -discard-value-names -main-file-name one_plus_one.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -no-integrated-as -mconstructor-aliases -dwarf-column-info -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0 -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu/ -I/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include -I/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include -c-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include -cxx-isystem /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward -internal-isystem /usr/local/include -internal-isystem /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fno-dwarf-directory-asm -fdebug-compilation-dir /home/pvelesko/testing/dpc/examples/openmp/one_plus_one -ferror-limit 19 -fmessage-length 0 -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -fopenmp-is-device -fopenmp-host-ir-file-path /tmp/one_plus_one-e554d1.bc -mllvm -paropt=63 -fopenmp-targets=spir64 -o /tmp/one_plus_one-582b2c.bc -x c++ ./one_plus_one.cpp
+clang -cc1 version 11.0.0 based upon LLVM 11.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0/x86_64-pc-linux-gnu
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/include
+ /soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/include/c++/8.2.0
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward
+ /usr/local/include
+ /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0/include
+ /usr/include
+End of search list.
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/llvm-link" /tmp/one_plus_one-582b2c.bc -o /tmp/one_plus_one-4b247d.out --suppress-warnings
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/bin/llvm-spirv" -o /tmp/one_plus_one-0d7734.out /tmp/one_plus_one-4b247d.out
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/bin/clang-offload-wrapper" -host x86_64-unknown-linux-gnu -o /tmp/one_plus_one-c19156.bc -kind=openmp -target=spir64 /tmp/one_plus_one-0d7734.out
+ "/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/clang++" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=1.2.1 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name one_plus_one -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/lib/clang/11.0.0 -fdebug-compilation-dir /home/pvelesko/testing/dpc/examples/openmp/one_plus_one -ferror-limit 19 -fmessage-length 0 -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -mllvm -paropt=31 -fopenmp-targets=spir64 -faddrsig -o /tmp/one_plus_one-3fe194.o -x ir /tmp/one_plus_one-c19156.bc
+clang -cc1 version 11.0.0 based upon LLVM 11.0.0git default target x86_64-unknown-linux-gnu
+ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o one_plus_one /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. -L/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/2021.1-beta05/linux/bin/../lib -L/lib -L/usr/lib -L/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/lib64 -L/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/lib -L/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/tbb/latest/lib/intel64/gcc4.8 -L/soft/restricted/intel_dga/sdk/2020.3.15.1/inteloneapi/compiler/latest/linux/lib /tmp/one_plus_one-a7ea62.o /tmp/one_plus_one-3fe194.o /tmp/one_plus_one-2f69a8.o -lstdc++ -lm -liomp5 -lomptarget -lgcc_s -lgcc -lsycl -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+/usr/bin/ld: cannot find -liomp5
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [all] Error 1
